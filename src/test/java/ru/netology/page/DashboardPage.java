@@ -1,6 +1,7 @@
 package ru.netology.page;
 
 import com.codeborne.selenide.ElementsCollection;
+import lombok.val;
 
 import static com.codeborne.selenide.Selenide.$$;
 
@@ -29,4 +30,4 @@ public class DashboardPage {
         return Integer.parseInt(value);
     }
 
-}
+    }

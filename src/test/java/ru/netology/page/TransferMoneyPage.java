@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import ru.netology.data.DataHelper;
 
 import static com.codeborne.selenide.Condition.exactText;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class TransferMoneyPage {
@@ -23,5 +24,4 @@ public class TransferMoneyPage {
     public void shouldNoNegativeBalance(DataHelper.MoneyTransfer moneyTransfer) {
         error.shouldHave(exactText("На карте " + moneyTransfer.getCardNumber() + " недостаточно средств. Пополните счет и повторите попытку")).shouldBe(visible);
     }
-
 }

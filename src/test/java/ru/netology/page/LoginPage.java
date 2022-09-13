@@ -26,5 +26,4 @@ public class LoginPage {
     public void shouldErrorMessage() {
         errorMessage.shouldHave(exactText("Ошибка! Неверно указан логин или пароль"));
     }
-
 }
